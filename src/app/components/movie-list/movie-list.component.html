@@ -1,0 +1,7 @@
+<div class="movie-list">
+    <div class="movie-card" *ngFor="let movie of movies" (click)="selectMovie(movie)">
+        <app-movie-card [movie]="movie"></app-movie-card>
+    </div>
+</div>
+
+<!-- <router-outlet></router-outlet> -->

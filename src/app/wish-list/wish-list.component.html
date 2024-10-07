@@ -1,0 +1,13 @@
+<div>
+    <h2>Your Wishlist</h2>
+    <div class="wishlist">
+        <div *ngFor="let movie of wishlist" class="movie-card">
+            <img [src]="'https://image.tmdb.org/t/p/w500/' + movie.poster_path" alt="{{ movie.title }}">
+            <div class="movie-details">
+                <h3>{{ movie.title }}</h3>
+                <p>{{ movie.overview }}</p>
+            </div>
+            <button (click)="removeMovie(movie)">Remove</button>
+        </div>
+    </div>
+</div>

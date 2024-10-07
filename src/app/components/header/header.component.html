@@ -1,0 +1,10 @@
+<div class="topnav">
+    <a class="active" routerLink="/" (click)="home()">Home</a>
+    <a routerLink="/wishlist" (click)="wish()">Wishlist</a>
+    <div class="searchButton">
+        <input type="text" #myInput placeholder="Search..">
+    </div>
+</div>
+
+<router-outlet></router-outlet>
+<app-movie-list [movies]="movies"></app-movie-list>

@@ -1,0 +1,9 @@
+<div class="movie-card">
+    <img [src]="'https://image.tmdb.org/t/p/w500/' + movie.poster_path" alt="{{ movie.title }}" class="movie-poster" />
+    <div class="movie-info">
+        <h3 class="movie-title">{{ movie.title }}</h3>
+        <p class="movie-details">{{ movie.overview }}</p>
+        <p class="movie-release-date">Release Date: {{ movie.release_date | date }}</p>
+        <button (click)="addToWishlist()">Add to Wishlist</button>
+    </div>
+</div>
